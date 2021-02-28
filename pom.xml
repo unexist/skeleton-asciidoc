@@ -70,8 +70,8 @@
                     <attributes>
                         <!-- Uses the <img src="data:image/png;base64> syntax for diagrams -->
                         <data-uri/>
+                        <imagesdir>./images</imagesdir>
                         <!-- Allows access to remote files (eg. code on external GitHub) -->
-                        <!-- imagesdir>./images</imagesdir-->
                         <allow-uri-read>true</allow-uri-read>
                     </attributes>
                     <requires>
