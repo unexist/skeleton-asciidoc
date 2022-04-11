@@ -1,5 +1,5 @@
-= Asiidoc Skeleton
-:description: This repository contains a skeleton to start with asciidoc
+= Asciidoc Skeleton
+:description: This repository contains a skeleton to start with Asciidoc
 :doctype: book
 :toc: left
 :toc-title: Table of Contents
