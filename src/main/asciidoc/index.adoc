@@ -8,4 +8,4 @@
 :icons: font
 :nofooter:
 
-Asciidoc Skeleton
+Asciidoc Skeleton - {custom-attribute}
