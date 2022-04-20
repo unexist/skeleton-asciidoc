@@ -1,0 +1,8 @@
+extends: default
+
+table:
+  border-color: dedede
+  head:
+    font-style: bold
+    background-color: f7f8f7
+    border-bottom-width: 0.5

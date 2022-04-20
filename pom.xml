@@ -185,6 +185,10 @@
                                 <data-uri/>
                                 <allow-uri-read>true</allow-uri-read>
 
+                                <!-- Styles -->
+                                <pdf-stylesdir>${project.basedir}/src/main/asciidoc/themes</pdf-stylesdir>
+                                <pdf-style>default</pdf-style>
+
                                 <!-- Custom attribute -->
                                 <custom-attribute>${custom.attribute}</custom-attribute>
                             </attributes>

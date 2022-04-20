@@ -7,5 +7,6 @@
 :sectnums:
 :icons: font
 :nofooter:
+:chapter-label:
 
 Asciidoc Skeleton - {custom-attribute}
