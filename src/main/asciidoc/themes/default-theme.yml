@@ -6,3 +6,8 @@ table:
     font-style: bold
     background-color: f7f8f7
     border-bottom-width: 0.5
+heading:
+    font-color: ba3925
+    font-style: normal
+links:
+    font-color: 2156a4
