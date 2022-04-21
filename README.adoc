@@ -1,3 +1,10 @@
 = Skeleton for asciidoc documents
 
 This project is just a common starter for asciidoc based projects with confluence support.
+
+== Links
+
+- https://www.wimdeblauwe.com/blog/2019/2019-12-20-customization-of-asciidoctor-pdf-output/
+- https://github.com/asciidoctor/asciidoctor-pdf/blob/main/docs/theming-guide.adoc
+- https://github.com/asciidoctor/asciidoctor-pdf/blob/main/data/themes/default-theme.yml
+
