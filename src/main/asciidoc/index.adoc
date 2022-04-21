@@ -9,4 +9,26 @@
 :nofooter:
 :chapter-label:
 
-Asciidoc Skeleton - {custom-attribute}
+== Asciidoc Skeleton - {custom-attribute}
+
+This is just a *test document* to show _some_ of the features.
+
+[cols="3,3,3"]
+|===
+| Col1 | Col2 | Col3
+
+| foo
+| bar
+| baz
+
+| oof
+| rab
+| zab
+|===
+
+[cols="1"]
+|===
+| Links
+
+| https://unexist.dev
+|===
