@@ -1,4 +1,4 @@
-= Skeleton for asciidoc documents
+= Skeleton for AsciiDoc documents
 
 This project is just a common starter for asciidoc based projects with confluence support.
 
