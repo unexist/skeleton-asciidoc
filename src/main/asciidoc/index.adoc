@@ -1,15 +1,19 @@
-= Asciidoc Skeleton
-:description: This repository contains a skeleton to start with Asciidoc
+= AsciiDoc Skeleton
+:description: This repository contains a skeleton to start with AsciiDoc
 :doctype: book
 :toc: left
 :toc-title: Table of Contents
-:toclevels: 2
+:toclevels: 3
 :sectnums:
 :icons: font
 :nofooter:
 :chapter-label:
 
-== Asciidoc Skeleton - {custom-attribute}
+:imagesdir: images
+
+== Asciidoc Skeleton
+
+=== {custom-attribute}
 
 This is just a *test document* to show _some_ of the features.
 
@@ -32,3 +36,11 @@ This is just a *test document* to show _some_ of the features.
 
 | https://unexist.dev
 |===
+
+=== Images
+
+image::unexist.png[unexist,25%,25%]
+
+== Chapters
+
+include::chapter1.adoc[leveloffset=+2]
