@@ -10,36 +10,26 @@ help:
 	@echo
 
 # Docs
-PDFOUT := Template.pdf
-HTMLOUT := index.html
-
-pdf:
-	asciidoctor-pdf src/main/asciidoc/index.adoc -D . -o $(PDFOUT) -a imagesdir=images
-
-	@echo
-	@echo "******************************************************"
-	@echo "*                                                    *"
-	@echo "* Documentation can be found here:                   *"
-	@echo "* $(PDFOUT)                                          *"
-	@echo "*                                                    *"
-	@echo "******************************************************"
-	@echo
+asciidoctor-pdf:
+	asciidoctor-pdf src/main/asciidoc/index.adoc -D . -o ./Documentation.pdf -a imagesdir=images
 
 open-pdf:
-	open $(PDFOUT)
+	open ./target/static/documentation/index.pdf
 
-open:
-	open ./target/static/documentation/$(HTMLOUT)
+open-html:
+	open ./target/static/documentation/index.html
 
 .DEFAULT_GOAL := docs
 docs:
-	@mvn -f pom.xml clean generate-resources
+	@mvn -f pom.xml clean generate-resources -Pgenerate-html,generate-pdf
 
 	@echo
 	@echo "**********************************************************"
 	@echo "*                                                        *"
 	@echo "* Documentation can be found here:                       *"
-	@echo "* ./target/static/documentation/$(HTMLOUT) *"
+	@echo "*                                                        *"
+	@echo "* HTML: ./target/static/documentation/index.html         *"
+	@echo "* PDF:  ./target/static/documentation/index.pdf          *"
 	@echo "*                                                        *"
 	@echo "**********************************************************"
 	@echo
