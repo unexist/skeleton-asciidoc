@@ -42,7 +42,7 @@
         <confluence.publisherPassword></confluence.publisherPassword>
 
         <!-- Custom attribute -->
-        <custom.attribute>default-value</custom.attribute>
+        <custom.attribute>Custom Attribute</custom.attribute>
     </properties>
 
     <build>
@@ -213,6 +213,28 @@
                                         <sectanchors>true</sectanchors>
                                     </attributes>
                                 </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>1.7</version>
+                        <executions>
+                            <execution>
+                                <id>copy-pdf</id>
+                                <phase>generate-resources</phase>
+
+                                <configuration>
+                                    <target>
+                                        <copy file="${project.build.directory}\static\documentation\index.pdf"
+                                              tofile="${basedir}/Documentation.pdf" />
+                                    </target>
+                                </configuration>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
                             </execution>
                         </executions>
                     </plugin>
