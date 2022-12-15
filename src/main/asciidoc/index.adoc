@@ -5,6 +5,7 @@
 :toc-title: Table of Contents
 :toclevels: 3
 :sectnums:
+:sectids:
 :icons: font
 :nofooter:
 :chapter-label:
