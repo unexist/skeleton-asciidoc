@@ -37,6 +37,8 @@ This is just a *test document* to show _some_ of the features.
 | https://unexist.dev
 |===
 
+And internal links look like <<referencename,this one.>>
+
 === Images
 
 image::unexist.png[unexist,25%,25%]
@@ -44,3 +46,6 @@ image::unexist.png[unexist,25%,25%]
 == Chapters
 
 include::chapter1.adoc[leveloffset=+2]
+
+[[referencename]]
+== References
