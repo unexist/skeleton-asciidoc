@@ -1,0 +1,27 @@
+extends: default
+
+page:
+  margin: [0.7in, 0.7in, 0.7in, 0.7in]
+
+header:
+  height: 0.76in
+  background_color: b2b2b2
+
+footer:
+  height: 1.18in
+  background_color: 292827
+
+
+table:
+  border_color: dedede
+  head:
+    font_style: bold
+    background_color: f7f8f7
+    border_bottom_width: 0.5
+
+heading:
+    font_color: ba3925
+    font_style: normal
+
+links:
+    font_color: 2156a4
