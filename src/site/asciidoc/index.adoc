@@ -1,4 +1,5 @@
 = AsciiDoc Skeleton
+Christoph kappel <christoph@unexist.dev>
 :description: This repository contains a skeleton to start with AsciiDoc
 :doctype: book
 :toc: left

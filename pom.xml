@@ -20,9 +20,9 @@
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
 
         <!-- Asciidoctor -->
-        <asciidoctor.maven-plugin.version>2.2.2</asciidoctor.maven-plugin.version>
-        <asciidoctorj.diagram.version>2.0.5</asciidoctorj.diagram.version>
-        <asciidoctorj.pdf.version>1.6.2</asciidoctorj.pdf.version>
+        <asciidoctor.maven-plugin.version>3.0.0</asciidoctor.maven-plugin.version>
+        <asciidoctorj.diagram.version>2.3.0</asciidoctorj.diagram.version>
+        <asciidoctorj.pdf.version>2.3.19</asciidoctorj.pdf.version>
 
         <sourceDirectory>./src/main/asciidoc</sourceDirectory>
         <outputDirectory>./target/static/documentation</outputDirectory>
@@ -186,8 +186,8 @@
                                 <allow-uri-read>true</allow-uri-read>
 
                                 <!-- Styles -->
-                                <pdf-stylesdir>${project.basedir}/src/main/asciidoc/themes</pdf-stylesdir>
-                                <pdf-style>default</pdf-style>
+                                <pdf-themesdir>${project.basedir}/src/main/asciidoc/themes</pdf-themesdir>
+                                <pdf-theme>default</pdf-theme>
 
                                 <!-- Custom attribute -->
                                 <custom-attribute>${custom.attribute}</custom-attribute>
