@@ -24,9 +24,9 @@
         <asciidoctorj.diagram.version>2.3.0</asciidoctorj.diagram.version>
         <asciidoctorj.pdf.version>2.3.19</asciidoctorj.pdf.version>
 
-        <sourceDirectory>./src/main/asciidoc</sourceDirectory>
+        <sourceDirectory>./src/site/asciidoc</sourceDirectory>
         <outputDirectory>./target/static/documentation</outputDirectory>
-        <asciidocDirectory>./src/main/asciidoc</asciidocDirectory>
+        <asciidocDirectory>./src/site/asciidoc</asciidocDirectory>
 
         <!-- Confluence config -->
         <confluence.publisher.version>0.12.0</confluence.publisher.version>
@@ -54,7 +54,7 @@
                 <configuration>
                     <filesets>
                         <fileset>
-                            <directory>src/main/resources/static/documentation</directory>
+                            <directory>src/site/resources/static/documentation</directory>
                             <followSymlinks>false</followSymlinks>
                         </fileset>
                     </filesets>
@@ -87,7 +87,7 @@
                     <logHandler>
                         <outputToConsole>true</outputToConsole>
                         <failIf>
-                            <severity>DEBUG</severity>
+                            <severity>ERROR</severity>
                         </failIf>
                     </logHandler>
                 </configuration>
@@ -137,7 +137,7 @@
                             <logHandler>
                                 <outputToConsole>true</outputToConsole>
                                 <failIf>
-                                    <severity>DEBUG</severity>
+                                    <severity>ERROR</severity>
                                 </failIf>
                             </logHandler>
                         </configuration>
@@ -186,8 +186,8 @@
                                 <allow-uri-read>true</allow-uri-read>
 
                                 <!-- Styles -->
-                                <pdf-themesdir>${project.basedir}/src/main/asciidoc/themes</pdf-themesdir>
-                                <pdf-theme>default</pdf-theme>
+                                <pdf-themesdir>${project.basedir}/src/site/asciidoc/themes</pdf-themesdir>
+                                <pdf-theme>skeleton</pdf-theme>
 
                                 <!-- Custom attribute -->
                                 <custom-attribute>${custom.attribute}</custom-attribute>
@@ -195,7 +195,7 @@
                             <logHandler>
                                 <outputToConsole>true</outputToConsole>
                                 <failIf>
-                                    <severity>DEBUG</severity>
+                                    <severity>ERROR</severity>
                                 </failIf>
                             </logHandler>
                         </configuration>
@@ -228,8 +228,11 @@
 
                                 <configuration>
                                     <target>
-                                        <copy file="${project.build.directory}\static\documentation\index.pdf"
-                                              tofile="${basedir}/Documentation.pdf" />
+                                        <copy todir="${basedir}">
+                                            <fileset dir="${project.build.directory}/static/documentation">
+                                                <include name="*.pdf"/>
+                                            </fileset>
+                                        </copy>
                                     </target>
                                 </configuration>
                                 <goals>
