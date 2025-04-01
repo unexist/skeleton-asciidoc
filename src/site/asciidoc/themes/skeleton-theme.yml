@@ -2,6 +2,10 @@ extends: default
 
 page:
   margin: [0in, 0in, 0in, 0in]
+  margin-inner: 0.7in
+
+title_page:
+  text-align: center
 
 header:
   height: 0.7in
@@ -10,12 +14,6 @@ header:
 footer:
   height: 1.2in
   background-color: 292827
-  recto:
-    right:
-      content: '{chapter-title} | *{page-number}*'
-  verso:
-    left:
-      content: '*{page-number}* | {chapter-title}'
 
 table:
   border-color: dedede
