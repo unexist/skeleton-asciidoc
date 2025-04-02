@@ -6,7 +6,7 @@
 
     <groupId>dev.unexist</groupId>
     <artifactId>skeleton-asciidoc</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.1</version>
 
     <name>asciidoc-skeleton</name>
     <url>https://unexist.dev</url>
@@ -14,10 +14,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
-
         <timestamp>${maven.build.timestamp}</timestamp>
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+
+        <!-- Maven -->
+        <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
+        <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
 
         <!-- Asciidoctor -->
         <asciidoctor.maven-plugin.version>3.2.0</asciidoctor.maven-plugin.version>
@@ -220,7 +222,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-antrun-plugin</artifactId>
-                        <version>1.7</version>
+                        <version>${maven-antrun-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>copy-pdf</id>
