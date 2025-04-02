@@ -189,11 +189,13 @@
                                 <allow-uri-read>true</allow-uri-read>
 
                                 <!-- Styles -->
+                                <pdf-fontsdir>${project.basedir}/src/site/asciidoc/fonts</pdf-fontsdir>
                                 <pdf-themesdir>${project.basedir}/src/site/asciidoc/themes</pdf-themesdir>
                                 <pdf-theme>skeleton</pdf-theme>
 
                                 <!-- Custom attribute -->
                                 <custom-attribute>${custom.attribute}</custom-attribute>
+                                <timestamp>${timestamp}</timestamp>
                             </attributes>
                             <logHandler>
                                 <outputToConsole>true</outputToConsole>
