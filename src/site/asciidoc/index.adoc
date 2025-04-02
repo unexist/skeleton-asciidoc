@@ -3,6 +3,7 @@ Christoph kappel <christoph@unexist.dev>
 :imagesdir: images
 :title-logo-image: image:unexist.png[top=40%,align=center,pdfwidth=1.0in]
 :description: This repository contains a skeleton to start with AsciiDoc
+:revdate: {timestamp}
 :doctype: book
 :toc: left
 :toc-title: Table of Contents

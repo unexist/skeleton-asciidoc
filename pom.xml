@@ -135,6 +135,7 @@
 
                                 <!-- Custom attribute -->
                                 <custom-attribute>${custom.attribute}</custom-attribute>
+                                <timestamp>${timestamp}</timestamp>
                             </attributes>
                             <logHandler>
                                 <outputToConsole>true</outputToConsole>
