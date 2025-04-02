@@ -2,24 +2,51 @@ extends: default
 
 page:
   margin: [0in, 0in, 0in, 0in]
-  margin-inner: 0.7in
 
-title_page:
+title-page:
   text-align: center
 
 header:
   height: 0.7in
-  background-color: b2b2b2
+  content-margin: 0.1in
+  font-color: #ffffff
+  background-color: #b2b2b2
+  recto:
+    left:
+      content: '{document-title}'
+    right:
+      content: '{revdate}'
+  verso:
+    left:
+      content: $header-recto-left-content
+    right:
+      content: $header-recto-right-content
 
 footer:
   height: 1.2in
-  background-color: 292827
+  content-margin: 0.1in
+  font-color: #ffffff
+  background-color: #292827
+  recto:
+    left:
+      content: '{page-number}'
+    center:
+      content: '(c) 2025-present Christoph Kappel <christoph@unexist.dev>'
+    right:
+      content: 'image:../images/unexist.png[width=50]'
+  verso:
+    left:
+      content: $footer-recto-left-content
+    center:
+      content: $footer-recto-center-content
+    right:
+      content: $footer-recto-right-content
 
 table:
   border-color: dedede
   head:
     font-style: bold
-    background-color: f7f8f7
+    background-color: #f7f8f7
     border-bottom-width: 0.5
 
 heading:
