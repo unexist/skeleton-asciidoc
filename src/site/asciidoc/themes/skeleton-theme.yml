@@ -10,7 +10,7 @@ font:
       bold_italic: opensans-bold_italic.ttf
 
 page:
-  margin: [ 0in, 0in, 0in, 0in ]
+    margin: 0in
 
 base:
   font-family: OpenSans
@@ -20,7 +20,7 @@ title-page:
 
 header:
   height: 0.7in
-  content-margin: 0.1in
+  vertical-align: middle
   font-color: #ffffff
   background-color: #b2b2b2
   recto:
@@ -34,6 +34,9 @@ header:
     right:
       content: $header-recto-right-content
 
+prose:
+  margin-inner: [5mm 5mm 5mm 5mm]
+
 table:
   border-color: #dedede
   head:
@@ -42,15 +45,21 @@ table:
     border-bottom-width: 0.5
 
 heading:
-  font-family: OpenSans
   font-color: #ba3925
+  # Book-type: h1 - Part titles, h2 = Chapter titles
+  h1:
+    margin-page-top: 0.7in
+    margin-top: 0.7in
+  h2:
+    margin-page-top: 0.7in
+    margin-top: 0.7in
 
 links:
   font-color: #2156a4
 
 footer:
   height: 1.2in
-  content-margin: 0.1in
+  vertical-align: middle
   font-color: #ffffff
   background-color: #292827
   recto:
@@ -67,4 +76,3 @@ footer:
       content: $footer-recto-center-content
     right:
       content: $footer-recto-right-content
-
