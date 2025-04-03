@@ -1,8 +1,8 @@
 extends: default
 
-fonts:
+font:
   catalog:
-    merge: true
+    merge: false
     OpenSans:
       normal: opensans-normal.ttf
       italic: opensans-italic.ttf
@@ -34,6 +34,20 @@ header:
     right:
       content: $header-recto-right-content
 
+table:
+  border-color: #dedede
+  head:
+    font-style: bold
+    background-color: #f7f8f7
+    border-bottom-width: 0.5
+
+heading:
+  font-family: OpenSans
+  font-color: #ba3925
+
+links:
+  font-color: #2156a4
+
 footer:
   height: 1.2in
   content-margin: 0.1in
@@ -54,16 +68,3 @@ footer:
     right:
       content: $footer-recto-right-content
 
-table:
-  border-color: #dedede
-  head:
-    font-style: bold
-    background-color: #f7f8f7
-    border-bottom-width: 0.5
-
-heading:
-  font-family: OpenSans
-  font-color: #ba3925
-
-links:
-  font-color: 2156a4
