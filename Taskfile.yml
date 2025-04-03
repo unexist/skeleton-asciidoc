@@ -16,7 +16,9 @@ tasks:
   # Docs
   asciidoctor-pdf:
     cmds:
-      - asciidoctor-pdf src/main/asciidoc/index.adoc -D . -o ./Documentation.pdf -a imagesdir=images
+      - asciidoctor-pdf src/site/asciidoc/index.adoc -D . -o ./Documentation.pdf \
+        -a imagesdir=src/site/asciidoc/images,pdf-themesdir=src/site/asciidoc/themes,pdf-fontsdir=src/site/asciidoc/fonts \
+        --theme skeleton-theme.yml
 
   open-pdf:
     cmds:
