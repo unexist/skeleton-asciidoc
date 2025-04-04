@@ -19,16 +19,22 @@ title-page:
   text-align: center
 
 header:
-  height: 0.7in
+  height: 19.5mm
   vertical-align: middle
   font-color: #ffffff
   background-color: #b2b2b2
   recto:
+    margin-bottom: 7.5mm
+    padding: [0mm, 19.5mm, 0mm, 19.5mm]
+
     left:
       content: '{document-title}'
     right:
       content: '{revdate}'
   verso:
+    padding: $header-recto-padding
+    margin-bottom: $header-recto-margin-bottom
+
     left:
       content: $header-recto-left-content
     right:
@@ -45,24 +51,31 @@ table:
     border-bottom-width: 0.5
 
 heading:
-  font-color: #ba3925
+  font-color: #ba3924
   # Book-type: h1 - Part titles, h2 = Chapter titles
   h1:
-    margin-page-top: 0.7in
-    margin-top: 0.7in
+    margin-page-top: $header-height + $header-recto-margin-bottom
   h2:
-    margin-page-top: 0.7in
-    margin-top: 0.7in
+    margin-page-top: $header-height + $header-recto-margin-bottom
+
+toc:
+  margin-top: 0
+
+  h1:
+    margin-page-top: 7.5mm
+    margin-top: 7.5mm
 
 links:
   font-color: #2156a4
 
 footer:
-  height: 1.2in
+  height: 30mm
   vertical-align: middle
   font-color: #ffffff
   background-color: #292827
   recto:
+    padding: $header-recto-padding
+
     left:
       content: '{page-number}'
     center:
@@ -70,6 +83,8 @@ footer:
     right:
       content: 'image:../images/unexist.png[width=50]'
   verso:
+    padding: $footer-recto-padding
+
     left:
       content: $footer-recto-left-content
     center:
